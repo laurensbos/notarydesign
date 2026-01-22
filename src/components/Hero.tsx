@@ -11,19 +11,19 @@ export default function Hero({ variant = 'modern' }: HeroProps) {
     return (
       <section className="relative min-h-screen flex items-center pt-28 sm:pt-32 pb-16 sm:pb-20 bg-[#f5f1ed] overflow-hidden">
         {/* Background decoration - Earthy Tones */}
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute -top-40 -right-40 w-60 sm:w-80 h-60 sm:h-80 bg-[#dad2bc] rounded-full blur-3xl opacity-40 animate-float-slow" />
-          <div className="absolute -bottom-40 -left-40 w-60 sm:w-80 h-60 sm:h-80 bg-[#a99985]/30 rounded-full blur-3xl opacity-50 animate-float-delayed" />
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] sm:w-[600px] h-[400px] sm:h-[600px] bg-[#dad2bc]/20 rounded-full blur-3xl opacity-30 animate-pulse" />
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <div className="absolute -top-40 right-0 w-60 sm:w-80 h-60 sm:h-80 bg-[#dad2bc] rounded-full blur-3xl opacity-40 animate-float-slow" />
+          <div className="absolute -bottom-40 left-0 w-60 sm:w-80 h-60 sm:h-80 bg-[#a99985]/30 rounded-full blur-3xl opacity-50 animate-float-delayed" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] sm:w-[600px] h-[300px] sm:h-[600px] bg-[#dad2bc]/20 rounded-full blur-3xl opacity-30 animate-pulse" />
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div className="relative max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 w-full">
           <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-20 items-center">
             {/* Content */}
             <div className="animate-fadeInUp order-2 lg:order-1">
               {/* Reviews badge */}
               <div className="inline-flex items-center gap-2 bg-white border border-[#dad2bc] rounded-full px-3 sm:px-4 py-1.5 sm:py-2 mb-4 sm:mb-6 shadow-sm hover:shadow-md transition-shadow">
-                <div className="flex -space-x-1">
+                <div className="flex">
                   {[1,2,3,4,5].map(i => (
                     <Star key={i} size={12} className="sm:w-3.5 sm:h-3.5 text-[#fca311] fill-[#fca311]" />
                   ))}
@@ -59,7 +59,7 @@ export default function Hero({ variant = 'modern' }: HeroProps) {
               </div>
 
               {/* Trust indicators */}
-              <div className="flex flex-wrap gap-4 sm:gap-6">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-6">
                 {[
                   { icon: CheckCircle, text: '100% Independent' },
                   { icon: Shield, text: 'Fully Certified' },
@@ -70,7 +70,7 @@ export default function Hero({ variant = 'modern' }: HeroProps) {
                     className="flex items-center gap-2 text-xs sm:text-sm text-[#70798c] opacity-0 animate-fadeInUp icon-bounce"
                     style={{ animationDelay: `${0.5 + i * 0.1}s`, animationFillMode: 'forwards' }}
                   >
-                    <item.icon size={16} className="sm:w-[18px] sm:h-[18px] text-[#14213d]" />
+                    <item.icon size={16} className="sm:w-[18px] sm:h-[18px] text-[#14213d] flex-shrink-0" />
                     <span>{item.text}</span>
                   </div>
                 ))}
