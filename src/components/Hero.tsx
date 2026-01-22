@@ -59,10 +59,10 @@ export default function Hero({ variant = 'modern' }: HeroProps) {
               </div>
 
               {/* Trust indicators */}
-              <div className="flex flex-col sm:flex-row gap-3 sm:gap-6">
+              <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
                 {[
-                  { icon: CheckCircle, text: '100% Independent' },
-                  { icon: Shield, text: 'Fully Certified' },
+                  { icon: CheckCircle, text: 'Independent' },
+                  { icon: Shield, text: 'Certified' },
                   { icon: Clock, text: '24h Response' },
                 ].map((item, i) => (
                   <div 
@@ -197,7 +197,7 @@ export default function Hero({ variant = 'modern' }: HeroProps) {
 
   // Minimal variant - Cool Steel palette
   return (
-    <section className="relative min-h-screen flex items-center pt-32 pb-20 bg-[#f4f4f6]">
+    <section className="relative min-h-screen flex items-center pt-32 pb-20 bg-[#f4f4f6] overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="grid lg:grid-cols-12 gap-12 items-end">
           {/* Content */}

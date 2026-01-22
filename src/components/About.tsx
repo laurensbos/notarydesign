@@ -52,7 +52,7 @@ export default function About({ variant = 'modern' }: AboutProps) {
 
   if (variant === 'modern') {
     return (
-      <section id="about" className="py-16 sm:py-20 md:py-32 bg-white">
+      <section id="about" className="py-16 sm:py-20 md:py-32 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-20 items-center">
             {/* Image */}
@@ -138,7 +138,7 @@ export default function About({ variant = 'modern' }: AboutProps) {
 
   if (variant === 'classic') {
     return (
-      <section id="about" className="py-20 md:py-32 bg-white">
+      <section id="about" className="py-20 md:py-32 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             {/* Content */}
@@ -201,7 +201,7 @@ export default function About({ variant = 'modern' }: AboutProps) {
 
   // Minimal - Cool Steel palette
   return (
-    <section id="about" className="py-20 md:py-32 bg-[#e6e6e9]">
+    <section id="about" className="py-20 md:py-32 bg-[#e6e6e9] overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div 
           ref={contentRef}

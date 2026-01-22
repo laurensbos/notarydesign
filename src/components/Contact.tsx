@@ -8,7 +8,7 @@ interface ContactProps {
 export default function Contact({ variant = 'modern' }: ContactProps) {
   if (variant === 'modern') {
     return (
-      <section id="contact" className="py-16 sm:py-20 md:py-32 bg-white">
+      <section id="contact" className="py-16 sm:py-20 md:py-32 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-20">
             {/* Content */}
@@ -97,7 +97,7 @@ export default function Contact({ variant = 'modern' }: ContactProps) {
 
   if (variant === 'classic') {
     return (
-      <section id="contact" className="py-16 sm:py-20 md:py-32 bg-white">
+      <section id="contact" className="py-16 sm:py-20 md:py-32 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <div className="w-16 h-1 bg-[#fca311] mx-auto mb-6" />
@@ -179,7 +179,7 @@ export default function Contact({ variant = 'modern' }: ContactProps) {
 
   // Minimal - Cool Steel palette
   return (
-    <section id="contact" className="py-20 md:py-32 bg-[#f4f4f6]">
+    <section id="contact" className="py-20 md:py-32 bg-[#f4f4f6] overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-12 gap-12">
           <div className="lg:col-span-5">

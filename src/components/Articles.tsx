@@ -36,7 +36,7 @@ const articles = [
 export default function Articles({ variant = 'modern' }: ArticlesProps) {
   if (variant === 'modern') {
     return (
-      <section id="articles" className="py-16 sm:py-20 md:py-32 bg-[#f5f1ed]">
+      <section id="articles" className="py-16 sm:py-20 md:py-32 bg-[#f5f1ed] overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 sm:gap-6 mb-8 sm:mb-12">
             <div>
@@ -90,7 +90,7 @@ export default function Articles({ variant = 'modern' }: ArticlesProps) {
 
   if (variant === 'classic') {
     return (
-      <section id="articles" className="py-20 md:py-32 bg-[#14213d]">
+      <section id="articles" className="py-20 md:py-32 bg-[#14213d] overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <div className="w-16 h-1 bg-[#fca311] mx-auto mb-6" />
@@ -142,7 +142,7 @@ export default function Articles({ variant = 'modern' }: ArticlesProps) {
 
   // Minimal - Cool Steel palette
   return (
-    <section id="articles" className="py-20 md:py-32 bg-[#f4f4f6]">
+    <section id="articles" className="py-20 md:py-32 bg-[#f4f4f6] overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 border-b border-[#9999a1]/30 pb-6">
           <div>

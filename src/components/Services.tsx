@@ -47,7 +47,7 @@ export default function Services({ variant = 'modern' }: ServicesProps) {
 
   if (variant === 'modern') {
     return (
-      <section id="services" className="py-16 sm:py-20 md:py-32 bg-[#f5f1ed]">
+      <section id="services" className="py-16 sm:py-20 md:py-32 bg-[#f5f1ed] overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div 
             ref={headerRef}
@@ -88,7 +88,7 @@ export default function Services({ variant = 'modern' }: ServicesProps) {
 
   if (variant === 'classic') {
     return (
-      <section id="services" className="py-20 md:py-32 bg-[#e5e5e5]">
+      <section id="services" className="py-20 md:py-32 bg-[#e5e5e5] overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div 
             ref={headerRef}
@@ -129,7 +129,7 @@ export default function Services({ variant = 'modern' }: ServicesProps) {
 
   // Minimal - Cool Steel palette
   return (
-    <section id="services" className="py-20 md:py-32 bg-white">
+    <section id="services" className="py-20 md:py-32 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div 
           ref={headerRef}

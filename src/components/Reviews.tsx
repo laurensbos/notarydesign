@@ -28,7 +28,7 @@ const reviews = [
 export default function Reviews({ variant = 'modern' }: ReviewsProps) {
   if (variant === 'modern') {
     return (
-      <section className="py-16 sm:py-20 md:py-32 bg-[#14213d]">
+      <section className="py-16 sm:py-20 md:py-32 bg-[#14213d] overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8 sm:mb-12">
             <p className="text-xs sm:text-sm font-medium text-[#dad2bc] mb-2 sm:mb-3 uppercase tracking-wider">Testimonials</p>
@@ -92,7 +92,7 @@ export default function Reviews({ variant = 'modern' }: ReviewsProps) {
 
   if (variant === 'classic') {
     return (
-      <section className="py-20 md:py-32 bg-[#e5e5e5]">
+      <section className="py-20 md:py-32 bg-[#e5e5e5] overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <div className="w-16 h-1 bg-[#fca311] mx-auto mb-6" />
@@ -131,7 +131,7 @@ export default function Reviews({ variant = 'modern' }: ReviewsProps) {
 
   // Minimal - Cool Steel palette
   return (
-    <section className="py-20 md:py-32 bg-[#000000] text-white">
+    <section className="py-20 md:py-32 bg-[#000000] text-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-12 gap-12 mb-12">
           <div className="lg:col-span-4">
