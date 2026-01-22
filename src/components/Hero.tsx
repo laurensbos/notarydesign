@@ -77,8 +77,8 @@ export default function Hero({ variant = 'modern' }: HeroProps) {
               </div>
             </div>
 
-            {/* Image */}
-            <div className="relative animate-fadeInUp stagger-2 order-1 lg:order-2">
+            {/* Image - Hidden on mobile */}
+            <div className="relative animate-fadeInUp stagger-2 order-1 lg:order-2 hidden md:block">
               <div className="relative rounded-2xl sm:rounded-3xl aspect-[4/3] overflow-hidden shadow-2xl hover:shadow-3xl transition-shadow duration-500">
                 <Image
                   src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80"
@@ -240,8 +240,8 @@ export default function Hero({ variant = 'modern' }: HeroProps) {
             </div>
           </div>
 
-          {/* Visual */}
-          <div className="lg:col-span-5 animate-fadeInUp stagger-3">
+          {/* Visual - Hidden on mobile */}
+          <div className="lg:col-span-5 animate-fadeInUp stagger-3 hidden md:block">
             <div className="relative group">
               <div className="aspect-[3/4] bg-[#e6e6e9] relative overflow-hidden">
                 <Image
