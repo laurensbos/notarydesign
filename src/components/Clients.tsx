@@ -180,7 +180,7 @@ export default function Clients({ variant = 'modern' }: ClientsProps) {
 
   if (variant === 'modern') {
     return (
-      <section className="py-16 sm:py-20 md:py-24 bg-[#14213d]">
+      <section className="py-16 sm:py-20 md:py-24 bg-[#14213d] overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div 
             ref={ref}
@@ -227,7 +227,7 @@ export default function Clients({ variant = 'modern' }: ClientsProps) {
 
   if (variant === 'classic') {
     return (
-      <section className="py-16 sm:py-20 md:py-24 bg-[#14213d]">
+      <section className="py-16 sm:py-20 md:py-24 bg-[#14213d] overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div 
             ref={ref}
@@ -275,7 +275,7 @@ export default function Clients({ variant = 'modern' }: ClientsProps) {
 
   // Minimal - Cool Steel palette
   return (
-    <section className="py-12 sm:py-16 bg-white">
+    <section className="py-12 sm:py-16 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div 
           ref={ref}
