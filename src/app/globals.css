@@ -5,28 +5,15 @@
   --background: #ffffff;
   --foreground: #171717;
   --font-sans: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
-  --font-serif: 'Georgia', 'Playfair Display', serif;
   
-  /* Earthy Tones Palette - Modern variant */
+  /* Modern Palette - Earthy Tones */
   --color-carbon: #252323;
+  --color-prussian: #14213d;
   --color-slate: #70798c;
   --color-parchment: #f5f1ed;
   --color-bone: #dad2bc;
   --color-khaki: #a99985;
-  
-  /* Black & Gold Elegance - Classic variant */
-  --color-black: #000000;
-  --color-prussian: #14213d;
   --color-gold: #fca311;
-  --color-alabaster: #e5e5e5;
-  --color-white: #ffffff;
-  
-  /* Cool Steel - Minimal variant */
-  --color-steel-black: #000000;
-  --color-dim-grey: #66666e;
-  --color-cool-steel: #9999a1;
-  --color-steel-alabaster: #e6e6e9;
-  --color-white-smoke: #f4f4f6;
 }
 
 @theme inline {
@@ -34,24 +21,14 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-sans);
   
-  /* Custom colors for Tailwind */
+  /* Modern Palette */
   --color-carbon: #252323;
+  --color-prussian: #14213d;
   --color-slate: #70798c;
   --color-parchment: #f5f1ed;
   --color-bone: #dad2bc;
   --color-khaki: #a99985;
-  
-  /* Black & Gold Elegance */
-  --color-black: #000000;
-  --color-prussian: #14213d;
   --color-gold: #fca311;
-  --color-alabaster: #e5e5e5;
-  
-  /* Cool Steel */
-  --color-dim-grey: #66666e;
-  --color-cool-steel: #9999a1;
-  --color-steel-alabaster: #e6e6e9;
-  --color-white-smoke: #f4f4f6;
 }
 
 /* Smooth scrolling */
