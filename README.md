@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Notariskantoor Website
 
-## Getting Started
+Professionele website voor een notariskantoor, gebouwd met Next.js 14, TypeScript en Tailwind CSS.
 
-First, run the development server:
+## 3 Design Varianten
+
+| Variant | URL | Stijl |
+|---------|-----|-------|
+| **Modern** | `/` | Clean, gradients, rounded, blauw/paars |
+| **Classic** | `/classic` | Elegant, navy/goud, serif fonts |
+| **Minimal** | `/minimal` | Ultra clean, stone kleuren, whitespace |
+
+## Features
+
+- ✅ Mobile-first responsive design
+- ✅ Apple-style fonts
+- ✅ Lucide icons
+- ✅ Trustpilot & Google Reviews integratie
+- ✅ Smooth scroll animaties
+- ✅ Contact formulier
+- ✅ Artikelen/blog sectie
+- ✅ Over ons sectie
+- ✅ Diensten overzicht
+
+## Quick Start
 
 ```bash
+# Installeer dependencies
+npm install
+
+# Start development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Open in browser
+open http://localhost:3000        # Modern design
+open http://localhost:3000/classic  # Classic design
+open http://localhost:3000/minimal  # Minimal design
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Framework**: Next.js 14 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Icons**: Lucide React
+- **Fonts**: System fonts (SF Pro, -apple-system)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project Structuur
 
-## Learn More
+```
+src/
+├── app/
+│   ├── page.tsx          # Modern homepage
+│   ├── classic/
+│   │   └── page.tsx      # Classic homepage
+│   ├── minimal/
+│   │   └── page.tsx      # Minimal homepage
+│   ├── layout.tsx
+│   └── globals.css
+├── components/
+│   ├── Header.tsx
+│   ├── Hero.tsx
+│   ├── Services.tsx
+│   ├── About.tsx
+│   ├── Reviews.tsx
+│   ├── Articles.tsx
+│   ├── Contact.tsx
+│   └── Footer.tsx
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Aanpassen
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Elke component accepteert een `variant` prop:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```tsx
+<Header variant="modern" />  // of "classic" of "minimal"
+```
 
-## Deploy on Vercel
+## Placeholder Content
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Alle teksten zijn momenteel Lorem Ipsum en moeten vervangen worden met echte content.
+Afbeeldingen zijn placeholders en moeten vervangen worden met echte foto's.
