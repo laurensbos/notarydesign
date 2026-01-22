@@ -79,7 +79,7 @@ export default function ArticlesPage() {
   return (
     <div className="min-h-screen bg-[#f5f1ed]">
       <DesignSwitcher />
-      <Header variant="modern" />
+      <Header />
 
       {/* Hero Section */}
       <section className="pt-32 sm:pt-36 pb-12 sm:pb-16 bg-[#f5f1ed]">
@@ -268,7 +268,7 @@ export default function ArticlesPage() {
         </div>
       </section>
 
-      <Footer variant="modern" />
+      <Footer />
     </div>
   );
 }
